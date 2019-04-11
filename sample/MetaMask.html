@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html# -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 user-scalable=no"
+    />
+    <title>MetaMask</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      /*========== index.css ==========*/
+
+      /*
+  ITCSS
+
+  http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+  https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ */
+      /*
+  Variables
+ */
+      /*
+  Colors
+  http://chir.ag/projects/name-that-color
+ */
+      /*
+  Z-Indicies
+ */
+      /*
+  Z Indicies - Current
+  app - 11
+  hex/bn as decimal input - 1 - remove?
+  dropdown - 11
+  loading - 10 - higher?
+  mascot - 0 - remove?
+ */
+      /*
+  Responsive Breakpoints
+ */
+    </style>
+  </head>
+  <body>
+    <div id="app-content">
+      <div data-reactroot="" class="app">
+        <!-- react-empty: 2 --><!-- react-empty: 3 --><!-- react-empty: 4 -->
+        <div class="app-header app-header--back-drop">
+          <div class="app-header__contents">
+            <div class="app-header__logo-container">
+              <img
+                class="app-header__metafox-logo app-header__metafox-logo--horizontal"
+                src="http://cdn.collider.com/wp-content/uploads/2017/04/yugioh-the-dark-side-of-dimensions-logo.png"
+                height="80"
+              /><img
+                class="app-header__metafox-logo app-header__metafox-logo--icon"
+                src="http://www.sclance.com/pngs/yugioh-png/./yugioh_png_1558057.png"
+                height="42"
+                width="42"
+              />
+            </div>
+            <div class="app-header__account-menu-container">
+              <div class="app-header__network-component-wrapper">
+                <div
+                  class="network-component pointer ethereum-network"
+                  title="Main Ethereum Network"
+                >
+                  <div class="network-indicator">
+                    <div class="menu-icon-circle">
+                      <div
+                        style="background: rgb(3, 135, 137); border: none; height: 12px; width: 12px;"
+                      ></div>
+                    </div>
+                    <div class="network-name">Current Running Game</div>
+                    <i class="fa fa-chevron-down fa-lg network-caret"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="account-menu__icon">
+                <div
+                  class="identicon"
+                  style="height: 32px; width: 32px; border-radius: 16px;"
+                >
+                  <div
+                    style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 32px; height: 32px; display: inline-block;"
+                  >
+                  <svg
+                  height="100"
+                  version="1.1"
+                  width="100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  style="overflow: hidden; position: relative;"
+                >
+                  <desc
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  >
+                    Created with Raphaël 2.2.0
+                  </desc>
+                  <defs
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  ></defs>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="32"
+                    height="32"
+                    rx="0"
+                    ry="0"
+                    fill="#034f5e"
+                    stroke="none"
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  ></rect>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="32"
+                    height="32"
+                    rx="0"
+                    ry="0"
+                    fill="#fb185c"
+                    stroke="none"
+                    transform="matrix(-0.9992,-0.0392,0.0392,-0.9992,29.8815,38.6556)"
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  ></rect>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="32"
+                    height="32"
+                    rx="0"
+                    ry="0"
+                    fill="#f94301"
+                    stroke="none"
+                    transform="matrix(0.8712,0.4908,-0.4908,0.8712,17.3887,-21.1612)"
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  ></rect>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="32"
+                    height="32"
+                    rx="0"
+                    ry="0"
+                    fill="#c8144a"
+                    stroke="none"
+                    transform="matrix(-0.8423,0.539,-0.539,-0.8423,45.1173,43.492)"
+                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                  ></rect>
+                </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><span></span></div>
+        <div
+          class=".menu-droppo-container network-droppo"
+          style="position: absolute; top: 58px; width: 309px; z-index: 55;"
+        >
+          <style>
+            .menu-droppo-enter {
+              transition: transform 300ms ease-in-out;
+              transform: translateY(-200%);
+            }
+
+            .menu-droppo-enter.menu-droppo-enter-active {
+              transition: transform 300ms ease-in-out;
+              transform: translateY(0%);
+            }
+
+            .menu-droppo-leave {
+              transition: transform 300ms ease-in-out;
+              transform: translateY(0%);
+            }
+
+            .menu-droppo-leave.menu-droppo-leave-active {
+              transition: transform 300ms ease-in-out;
+              transform: translateY(-200%);
+            }
+          </style>
+        </div>
+        <noscript></noscript>
+        <div class="main-container-wrapper">
+          <div class="main-container">
+            <div class="account-and-transaction-details">
+              <!-- react-empty: 28 -->
+              <div class="transaction-view">
+                <div class="menu-bar">
+                  <div class="fa fa-bars menu-bar__sidebar-button"></div>
+                  <div class="selected-account">
+                    <div class="">
+                      <div
+                        class=""
+                        data-tooltipped=""
+                        aria-describedby="tippy-tooltip-1"
+                        data-original-title="Copy to clipboard"
+                        style="display: inline;"
+                      >
+                        <div class="selected-account__clickable">
+                          <div class="selected-account__name">Account 1</div>
+                          <div class="selected-account__address">
+                            0xb468...39d4
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fa fa-ellipsis-h fa-lg menu-bar__open-in-browser"
+                  ></div>
+                </div>
+                <div class="transaction-view__balance-wrapper">
+                  <div class="transaction-view-balance">
+                    <div class="transaction-view-balance__balance-container">
+                      <img
+                        class="balance-icon"
+                        src="test.jpg"
+                      />
+                      <div class="">
+                        <div
+                          title="Balance may be outdated"
+                          class=""
+                          style="display: inline;"
+                        >
+                          <div class="transaction-view-balance__balance">
+                            <div
+                              class="transaction-view-balance__primary-container"
+                            >
+                              <div
+                                class="currency-display-component transaction-view-balance__primary-balance"
+                              >
+                                <span class="currency-display-component__text"
+                                  >0</span
+                                ><span
+                                  class="currency-display-component__suffix"
+                                  >ETH</span
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="currency-display-component transaction-view-balance__secondary-balance"
+                            >
+                              <span class="currency-display-component__text"
+                                >$0.00</span
+                              ><span class="currency-display-component__suffix"
+                                >USD</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transaction-view-balance__buttons">
+                      <button
+                        class="button btn-primary transaction-view-balance__button"
+                      >
+                        Deposit</button
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="transaction-list">
+                  <div class="transaction-list__transactions">
+                    <div class="transaction-list__completed-transactions">
+                      <div class="transaction-list__header">History</div>
+                      <div class="transaction-list__empty">
+                        <div class="transaction-list__empty-text">
+                          You have no transactions
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/libs.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/ui.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <div
+      class="tooltip bottom"
+      style="transition: opacity 0.4s ease 0s; left: -500px; top: -500px; opacity: 0;"
+    >
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Menu</div>
+    </div>
+    <div
+      class="tooltip bottom"
+      style="transition: opacity 0.4s ease 0s; left: -500px; top: -500px; opacity: 0;"
+    >
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Account Options</div>
+    </div>
+  </body>
+</html>
